@@ -1,5 +1,21 @@
+import { ContactForm } from "components/ContactForm";
+import { GlobalStyles } from "GlobalStyles";
+import Head from "next/head";
+import { Hero } from "components/Hero";
+import { Navbar } from "components/Navbar";
+import { Products } from "components/Products";
+
 export default () => (
   <div>
-    <h1>My First Next.js Page</h1>
+    <Head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    </Head>
+    <GlobalStyles></GlobalStyles>
+    <Navbar></Navbar>
+    <Hero></Hero>
+    <Products></Products>
   </div>
 );
