@@ -8,7 +8,7 @@ export const Products = () => {
       margin="10rem auto 4rem"
       xl_margin="6rem auto 4rem"
       width="100%"
-      maxWidth="900px"
+      maxWidth="1000px"
       padding="1rem"
     >
       <Title>GET TO KNOW MOTE ABOUT OUR PRODUCTS</Title>

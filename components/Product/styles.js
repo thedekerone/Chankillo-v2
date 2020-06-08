@@ -12,10 +12,17 @@ export const Description = styled.p`
   margin-top: 1.2rem;
   margin-bottom: 3.1rem;
   line-height: 2.25rem;
+  @media (max-width: 700px) {
+    margin-bottom: 2rem;
+    margin-top: 0.8rem;
+  }
 `;
 
 export const Img = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  @media (max-width: 700px) {
+    margin-bottom: 1rem;
+  }
 `;

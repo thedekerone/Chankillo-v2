@@ -21,14 +21,14 @@ export const Hero = () => {
         margin="0 auto"
         alignItems="center"
       >
-        <Wrapper width="28rem" xl_width="100%" margin="0 0 3rem 0">
+        <Wrapper width="33rem" xl_width="100%" margin="0 0 3rem 0">
           <Title>FIND THE BEST FRUITS IN THE MARKET</Title>
           <Text>
             In Chankillo Farmers we are proud of the quality we deliver in all
             of our fruits, contact us to get a quote and learn more
           </Text>
         </Wrapper>
-        <ContactForm width="32.25rem"></ContactForm>
+        <ContactForm></ContactForm>
       </Wrapper>
     </Wrapper>
   );

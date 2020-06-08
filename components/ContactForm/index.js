@@ -4,7 +4,7 @@ import { Button } from "styles/Button";
 
 export const ContactForm = ({ width }) => {
   return (
-    <Form onSubmit={(e) => e.preventDefault()} width={width}>
+    <Form onSubmit={(e) => e.preventDefault()} width="32rem">
       <label>
         name
         <input type="text" name="name" id="name" placeholder="Full name" />
@@ -31,11 +31,11 @@ export const ContactForm = ({ width }) => {
         width="100%"
         color="white"
         fontWeight="600"
-        bHover="#249429"
-        bActive="#1A771F"
+        bHover="#12A561"
+        bActive="#0E814B"
         border="0"
         size="1.20rem"
-        background="#248A29"
+        background="#109356"
         padding="1.5rem 2rem"
       >
         SUBMIT

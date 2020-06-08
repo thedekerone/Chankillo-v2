@@ -20,7 +20,7 @@ export const Product = ({
       lg_direction="column"
       lg_align="center"
     >
-      <Wrapper width="20rem" lg_width="100%">
+      <Wrapper width="23rem" lg_width="100%">
         <Img width="100%" src={img} alt="mango" />
       </Wrapper>
       <Wrapper
@@ -33,11 +33,15 @@ export const Product = ({
         <ProductName>{title}</ProductName>
         <Description>{description}</Description>
         <Button
-          color="#479A4B"
+          color="#14B86B"
           width="20rem"
           lg_width="100%"
           padding="1rem "
-          border="1px solid #479A4B"
+          bHover="#14B86B"
+          cHover="white"
+          bActive="#14B86B"
+          cActive="white"
+          border="1px solid #14B86B"
           background="white"
           fontWeight="500"
         >

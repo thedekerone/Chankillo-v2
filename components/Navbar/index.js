@@ -7,9 +7,10 @@ export const Navbar = () => {
     <NavbarContainer width="100%" position="relative">
       <Wrapper
         position="absolute"
-        padding="1rem 1rem"
+        padding="1rem 3rem"
         flex
         width="100%"
+        lg_padding="1rem 1rem"
         justifyContent="space-between"
         alignItems="center"
       >

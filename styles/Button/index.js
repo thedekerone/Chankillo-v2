@@ -11,11 +11,16 @@ export const Button = styled.button`
   ${(props) => props.size && "font-size: " + props.size};
   text-align: center;
   outline: none;
-  &:hover {
-    ${(props) => props.bHover && "background: " + props.bHover};
+  @media (min-width: 900px) {
+    &:hover {
+      ${(props) => props.bHover && "background: " + props.bHover};
+      ${(props) => props.cHover && "color: " + props.cHover};
+    }
   }
+
   &:active {
     ${(props) => props.bActive && "background: " + props.bActive};
+    ${(props) => props.cActive && "color: " + props.cActive};
   }
 
   @media (max-width: 900px) {

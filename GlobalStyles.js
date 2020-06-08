@@ -18,4 +18,9 @@ export const GlobalStyles = createGlobalStyle`
             font-size: 14px;
         }
     }
+    @media (max-width: 600px) {
+        html{
+            font-size: 12px;
+        }
+    }
 `;

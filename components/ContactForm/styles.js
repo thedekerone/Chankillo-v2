@@ -28,7 +28,10 @@ export const Form = styled.form`
     margin-top: 0.71rem;
     width: 100%;
     border: 1px solid #e3e3e3;
-    padding: 0.5rem;
+    padding: 0.8rem 0.5rem;
+  }
+  & input::placeholder {
+    color: #9e9e9e;
   }
   & input:focus {
     outline: none;
