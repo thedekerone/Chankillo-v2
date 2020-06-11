@@ -1,10 +1,17 @@
 import React from "react";
 import { Wrapper } from "styles/Wrapper";
+import { Thumbnail } from "components/Thumbail";
+import { Grid, Title } from "./styles";
 
-export const index = () => {
+export const Blog = () => {
   return (
-    <Wrapper>
-      <h3>INTERESTING ARTICLES</h3>
+    <Wrapper margin="0 0 4rem 0" padding="0 1rem">
+      <Title>INTERESTING ARTICLES</Title>
+      <Grid maxWidth="1200px" width="100%" margin="0 auto">
+        <Thumbnail></Thumbnail>
+        <Thumbnail></Thumbnail>
+        <Thumbnail></Thumbnail>
+      </Grid>
     </Wrapper>
   );
 };

@@ -4,7 +4,8 @@ import Head from "next/head";
 import { Hero } from "components/Hero";
 import { Navbar } from "components/Navbar";
 import { Products } from "components/Products";
-
+import { Thumbnail } from "components/Thumbail";
+import { Blog } from "components/Blog";
 export default () => (
   <div>
     <Head>
@@ -17,5 +18,6 @@ export default () => (
     <Navbar></Navbar>
     <Hero></Hero>
     <Products></Products>
+    <Blog></Blog>
   </div>
 );
