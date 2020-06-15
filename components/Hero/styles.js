@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Title = styled.h2`
   font-size: 2.6rem;
   font-weight: 600;
-  color: #484848;
+  color: #0a5c36;
   margin-bottom: 1.5rem;
 `;
 

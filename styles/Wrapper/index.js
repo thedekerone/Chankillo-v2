@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
   ${(props) => props.height && "height:" + props.height};
   ${(props) => props.padding && "padding:" + props.padding};
   ${(props) => props.flex && "display:flex"};
+  ${(props) => props.display && "display:" + props.display};
   ${(props) =>
     props.justifyContent && "justify-content:" + props.justifyContent};
   ${(props) => props.alignItems && "align-items:" + props.alignItems};
@@ -30,4 +31,9 @@ export const Wrapper = styled.div`
     ${(props) => props.lg_padding && "padding:" + props.lg_padding};
     ${(props) => props.lg_margin && "margin:" + props.lg_margin};
   }
+`;
+
+export const Slider = styled(Wrapper)`
+  overflow: auto;
+  white-space: nowrap;
 `;

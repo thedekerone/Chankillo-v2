@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Wrapper } from "styles/Wrapper";
-import { fade } from "animation";
+import { fade, fadeOut } from "animation";
 
 export const Label = styled.label`
   margin-bottom: 3.125rem;
@@ -25,10 +25,13 @@ export const Wrap = styled(Wrapper)`
     width: 0%;
     transition: 1s;
     ${(props) =>
-      props.trigger &&
-      css`
-        animation: ${fade} 0.4s ease forwards;
-      `};
+      props.trigger
+        ? css`
+            animation: ${fade} 0.4s ease forwards;
+          `
+        : css`
+            animation: ${fadeOut} 0.2s ease forwards;
+          `};
     height: 3px;
     bottom: 0;
     margin: 0 auto;

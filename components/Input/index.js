@@ -5,7 +5,7 @@ export const Input = ({ type, name, placeholder }) => {
   const [trigger, setTrigger] = useState(false);
   return (
     <Label>
-      <p>name:</p>
+      <p>{name}</p>
       <Wrap
         trigger={trigger}
         position="absolute"

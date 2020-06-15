@@ -28,6 +28,7 @@ export const Button = styled.button`
     ${(props) => props.xl_padding && "padding:" + props.xl_padding};
     ${(props) => props.xl_margin && "margin:" + props.xl_margin};
   }
+  transition: 0.3s;
   @media (max-width: 700px) {
     ${(props) => props.lg_width && "width:" + props.lg_width};
     ${(props) => props.lg_padding && "padding:" + props.lg_padding};

@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const Article = styled.div`
   background: white;
   width: 100%;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
 `;
 
 export const Content = styled.div`
@@ -20,7 +20,7 @@ export const Title = styled.header`
 `;
 
 export const Text = styled.p`
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 2.25rem;
   color: #858585;
 `;

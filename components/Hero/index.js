@@ -3,7 +3,7 @@ import { ContactForm } from "components/ContactForm";
 import { Wrapper } from "styles/Wrapper";
 import { Title, Text, Partial } from "./styles";
 
-export const Hero = () => {
+export const Hero = ({ title, message }) => {
   return (
     <Wrapper
       position="relative"
@@ -22,11 +22,8 @@ export const Hero = () => {
         alignItems="center"
       >
         <Wrapper width="33rem" xl_width="100%" margin="0 0 3rem 0">
-          <Title>FIND THE BEST FRUITS IN THE MARKET</Title>
-          <Text>
-            In Chankillo Farmers we are proud of the quality we deliver in all
-            of our fruits, contact us to get a quote and learn more
-          </Text>
+          <Title>{title}</Title>
+          <Text>{message}</Text>
         </Wrapper>
         <ContactForm></ContactForm>
       </Wrapper>
