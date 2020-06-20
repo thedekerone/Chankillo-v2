@@ -1,23 +1,31 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Article = styled.div`
-  background: white;
+  background: ${(props) => (props.mini ? "" : "white")};
   width: 100%;
-  -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+  ${(props) =>
+    props.mini
+      ? ""
+      : css`
+          -webkit-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+          -moz-box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.05);
+        `};
 `;
 
 export const Content = styled.div`
-  padding: 0.6rem 1rem;
+  padding: ${(props) => (props.mini ? "0.6rem 0" : "0.6rem 1rem")};
 `;
 
 export const Title = styled.a`
-  font-size: 1.5rem;
+  font-size: ${(props) => (props.mini ? "1rem" : "1.8rem")};
   font-weight: 600;
   color: #3d3d3d;
   display: block;
   margin: 0.4rem 0 0.8rem;
+  &:hover {
+    color: #a3a3a3;
+  }
 `;
 
 export const Text = styled.p`

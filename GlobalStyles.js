@@ -18,6 +18,13 @@ export const GlobalStyles = createGlobalStyle`
         margin-left: 2rem
     }
 
+    .post-content{
+        & img{
+            width:90%!important;
+            margin: 2rem 0;
+        }
+    }
+
     a{
         cursor:pointer;
     }

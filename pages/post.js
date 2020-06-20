@@ -5,11 +5,18 @@ import { Youtube } from "components/Context";
 import { Layout } from "components/Layout";
 import { Wrapper } from "styles/Wrapper";
 import { Posts } from "components/Posts";
+import { Title } from "styles/Post/styles";
 
 export default (props) => {
   return (
-    <Layout>
-      <Wrapper padding="12rem 0 0 0">
+    <Layout path="post">
+      <Wrapper
+        maxWidth="1200px"
+        width="100%"
+        margin="0 auto"
+        padding="12rem 0 0"
+      >
+        <Title>Posts</Title>
         <Posts posts={props.posts.objects}></Posts>
       </Wrapper>
     </Layout>

@@ -8,6 +8,7 @@ import { Blog } from "components/Blog";
 import { VideoSection } from "components/VideoSection";
 import { Youtube } from "components/Context";
 import { Layout } from "components/Layout";
+import { Wrapper } from "styles/Wrapper";
 export default (props) => {
   const data = [
     {
@@ -45,8 +46,9 @@ export default (props) => {
         of our fruits, contact us to get a quote and learn more"
         ></Hero>
         <Products></Products>
-
-        <Blog></Blog>
+        <Wrapper padding="0 1rem">
+          <Blog></Blog>
+        </Wrapper>
         <VideoSection></VideoSection>
       </Youtube.Provider>
     </Layout>

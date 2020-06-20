@@ -44,6 +44,7 @@ export const Product = ({
           border="1px solid #14B86B"
           background="white"
           fontWeight="500"
+          disabled
         >
           LEARN MORE
         </Button>

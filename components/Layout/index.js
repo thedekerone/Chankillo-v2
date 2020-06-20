@@ -3,11 +3,11 @@ import { Navbar } from "components/Navbar";
 import { GlobalStyles } from "GlobalStyles";
 import { Wrapper } from "styles/Wrapper";
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, path }) => {
   return (
     <Fragment>
       <GlobalStyles></GlobalStyles>
-      <Navbar></Navbar>
+      <Navbar path={path}></Navbar>
       {children}
     </Fragment>
   );

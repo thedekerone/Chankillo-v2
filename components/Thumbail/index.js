@@ -6,17 +6,18 @@ import Link from "next/link";
 export const Thumbnail = ({
   cover,
   title = "No title provided",
-  description = "No description provided",
+  description,
   slug,
+  mini = false,
 }) => {
   return (
-    <Article>
+    <Article mini={mini}>
       <Thumb src={cover}></Thumb>
-      <Content>
-        <Link href={"post/" + slug}>
-          <Title>{title}</Title>
+      <Content mini={mini}>
+        <Link href={"/post/" + slug}>
+          <Title mini={mini}>{title}</Title>
         </Link>
-        <Text>{description.slice(0, 100) + "..."}</Text>
+        {description ? <Text>{description.slice(0, 100) + "..."}</Text> : ""}
       </Content>
     </Article>
   );

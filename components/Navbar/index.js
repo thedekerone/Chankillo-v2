@@ -3,7 +3,7 @@ import { Wrapper } from "styles/Wrapper";
 import { List, NavbarContainer, Anchor } from "./styles";
 import Link from "next/link";
 
-export const Navbar = () => {
+export const Navbar = ({ path }) => {
   return (
     <NavbarContainer width="100%" position="relative">
       <Wrapper
@@ -15,19 +15,21 @@ export const Navbar = () => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <div>
-          <img src="/images/logo.png" width="80px" alt="logo" />
-        </div>
+        <Link href="/">
+          <a>
+            <img src="/images/logo.png" width="80px" alt="logo" />
+          </a>
+        </Link>
         <div>
           <List>
             <li>
               <Link href="/">
-                <Anchor active>HOME</Anchor>
+                <Anchor active={path != "post"}>HOME</Anchor>
               </Link>
             </li>
             <li>
               <Link href="/post">
-                <Anchor>POST</Anchor>
+                <Anchor active={path == "post"}>POST</Anchor>
               </Link>
             </li>
             <li>

@@ -1,16 +1,28 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
+
+const inactive = css`
+  cursor: not-allowed;
+  color: #000 !important;
+  border: 1px solid grey !important;
+  &:hover {
+    background: transparent !important;
+  }
+`;
 
 export const Button = styled.button`
   cursor: pointer;
   ${(props) => props.padding && "padding: " + props.padding};
   ${(props) => props.width && "width: " + props.width};
+  ${(props) => props.color && "color: " + props.color};
   ${(props) => props.background && "background: " + props.background};
   ${(props) => props.border && "border: " + props.border};
-  ${(props) => props.color && "color: " + props.color};
   ${(props) => props.fontWeight && "font-weight: " + props.fontWeight};
   ${(props) => props.size && "font-size: " + props.size};
   text-align: center;
   outline: none;
+
+  ${(props) => props.disabled && inactive}
+
   @media (min-width: 900px) {
     &:hover {
       ${(props) => props.bHover && "background: " + props.bHover};
