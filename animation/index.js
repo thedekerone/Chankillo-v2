@@ -6,14 +6,14 @@ export const fade = keyframes`
     }
 
     to{
-        width: calc(100% - 6.25rem);
+        width: calc(100% - 5.75rem);
     }
 
 `;
 
 export const fadeOut = keyframes`
     from{
-        width: calc(100% - 6.25rem);
+        width: calc(100% - 5.75rem);
     }
 
     to{

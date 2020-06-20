@@ -24,10 +24,11 @@ export default class MyDocument extends Document {
       <html>
         <Head>
           {/* Step 5: Output the styles in the head  */}
+
           {this.props.styleTags}
           <script
             src="https://kit.fontawesome.com/87121b56c7.js"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           ></script>
         </Head>
         <body>

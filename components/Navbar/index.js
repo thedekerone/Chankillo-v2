@@ -1,6 +1,7 @@
 import React from "react";
 import { Wrapper } from "styles/Wrapper";
 import { List, NavbarContainer, Anchor } from "./styles";
+import Link from "next/link";
 
 export const Navbar = () => {
   return (
@@ -20,15 +21,19 @@ export const Navbar = () => {
         <div>
           <List>
             <li>
-              <Anchor active href="#">
-                HOME
-              </Anchor>
+              <Link href="/">
+                <Anchor active>HOME</Anchor>
+              </Link>
             </li>
             <li>
-              <Anchor href="#">PRODUCTS</Anchor>
+              <Link href="/post">
+                <Anchor>POST</Anchor>
+              </Link>
             </li>
             <li>
-              <Anchor href="#">ABOUT</Anchor>
+              <Link href="#">
+                <Anchor>ABOUT</Anchor>
+              </Link>
             </li>
           </List>
         </div>

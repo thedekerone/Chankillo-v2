@@ -1,16 +1,22 @@
 import React from "react";
 import { Article, Text, Title, Content } from "./styles";
+import { Thumb } from "components/VideoSection/styles";
+import Link from "next/link";
 
-export const Thumbnail = () => {
+export const Thumbnail = ({
+  cover,
+  title = "No title provided",
+  description = "No description provided",
+  slug,
+}) => {
   return (
     <Article>
-      <img src="/images/camp1.jpg" alt="growing" width="100%" />
+      <Thumb src={cover}></Thumb>
       <Content>
-        <Title>This is still and article</Title>
-        <Text>
-          Enjoy the delicious mango kent in it's best state, containing a lot of
-          good calories this delocious fruit is a great adition to your diet.
-        </Text>
+        <Link href={"post/" + slug}>
+          <Title>{title}</Title>
+        </Link>
+        <Text>{description.slice(0, 100) + "..."}</Text>
       </Content>
     </Article>
   );

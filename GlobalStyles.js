@@ -13,6 +13,15 @@ export const GlobalStyles = createGlobalStyle`
     button{
         font-family: "Montserrat", sans-serif;
     }
+
+    li{
+        margin-left: 2rem
+    }
+
+    a{
+        cursor:pointer;
+    }
+
     @media (max-width: 1200px) {
         html{
             font-size: 14px;

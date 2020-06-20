@@ -10,8 +10,19 @@ export const Video = styled.iframe`
   min-height: 10rem;
 `;
 
+export const Thumb = styled.div`
+  width: 100%;
+  border: 0;
+  height: 0;
+  padding: 55% 0 0 0;
+  background: url(${(props) => props.src});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+`;
+
 export const Title = styled.h2`
-  color: #5e5e5e;
+  color: ${(props) => (props.dark ? "#474747" : "#109356")};
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -59,4 +70,11 @@ export const VideoButton = styled(Button)`
     align-self: auto;
     margin-top: 2rem;
   }
+`;
+
+export const PostTitle = styled.h4`
+  margin-top: 1rem;
+  white-space: normal;
+  color: #585858;
+  line-height: 1.5rem;
 `;

@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { Wrapper, Slider } from "styles/Wrapper";
+import { FaArrowRight } from "react-icons/fa";
+
 import {
   Video,
   VideoWrapper,
@@ -7,11 +9,12 @@ import {
   Text,
   VideoButton,
   VideoGrid,
+  Thumb,
+  PostTitle,
 } from "./styles";
-import { Grid } from "components/Blog/styles";
 import { Youtube } from "components/Context";
 export const VideoSection = () => {
-  const videos = useContext(Youtube);
+  const { videos } = useContext(Youtube);
   console.log(videos);
   return (
     <Wrapper
@@ -26,22 +29,14 @@ export const VideoSection = () => {
         <Wrapper>
           <Video
             width="100%"
-            src={"https://www.youtube.com/embed/" + videos[0].id.videoId}
+            src={videos[0].url}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           ></Video>
         </Wrapper>
         <Wrapper height="100%" flex direction="column">
-          <Title>How does the coronavirus affects the farm industry</Title>
-          <Text>
-            In this video wi discuss about the effects of the coronavirus over
-            the farm industries, our speakers is some guy from a place that we
-            don't know krappa.
-          </Text>
-          <Text>
-            In this video wi discuss about the effects of the coronavirus over
-            the farm industries, our speakers is some guy from a place that we
-            don't know krappa
-          </Text>
+          <Title dark>{videos[0].title}</Title>
+          <Text>{videos[0].description}</Text>
+
           <VideoButton
             border="0"
             background="#14B86B"
@@ -50,39 +45,30 @@ export const VideoSection = () => {
             fontWeight="bold"
           >
             <div className="sign">
-              <i className="fas fa-arrow-right"></i>
+              <FaArrowRight />
             </div>
             WATCH RELATED
           </VideoButton>
         </Wrapper>
       </VideoWrapper>
+
       <Wrapper margin="3.8rem 0 0 0">
-        <h3>RELATED VIDEOS</h3>
+        <h3>FEATURED VIDEOS</h3>
 
         <Slider margin="2rem 0">
           <Wrapper margin="0  0 0 0rem" display="inline-block" width="20rem">
-            <Video
-              width="100%"
-              src="https://www.youtube.com/embed/mghV1_tksUU"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            ></Video>
-            <h4>video title goes here</h4>
+            <Thumb src={videos[1].imgPath}></Thumb>
+            <PostTitle>{videos[1].title}</PostTitle>
           </Wrapper>
+
           <Wrapper margin="0  0 0 3rem" display="inline-block" width="20rem">
-            <Video
-              width="100%"
-              src="https://www.youtube.com/embed/mghV1_tksUU"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            ></Video>
-            <h4>video title goes here</h4>
+            <Thumb src={videos[0].imgPath}></Thumb>
+            <PostTitle>{videos[0].title}</PostTitle>
           </Wrapper>
+
           <Wrapper margin="0  0 0 3rem" display="inline-block" width="20rem">
-            <Video
-              width="100%"
-              src="https://www.youtube.com/embed/mghV1_tksUU"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            ></Video>
-            <h4>video title goes here</h4>
+            <Thumb src={videos[1].imgPath}></Thumb>
+            <PostTitle>{videos[1].title}</PostTitle>
           </Wrapper>
         </Slider>
       </Wrapper>
