@@ -31,7 +31,7 @@ export const Anchor = styled.a`
   height: 1.5rem;
   text-decoration: none;
   font-size: 0.95rem;
-  color: #c7c7c7;
+  color: #a7a7a7;
   margin: 0 0 0 6.5rem;
   ${(props) => props.active && active};
   &:hover {
@@ -39,11 +39,11 @@ export const Anchor = styled.a`
   }
   @media (max-width: 900px) {
     color: #5e5e5e;
-    margin: 0 0 0 4rem;
+    margin: 0 0 0 3.8rem;
   }
   @media (max-width: 700px) {
     color: #5e5e5e;
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 1.8rem;
   }
 `;
 

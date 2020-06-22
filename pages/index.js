@@ -9,6 +9,7 @@ import { VideoSection } from "components/VideoSection";
 import { Youtube } from "components/Context";
 import { Layout } from "components/Layout";
 import { Wrapper } from "styles/Wrapper";
+import { Certifications } from "components/Certifications";
 export default (props) => {
   const data = [
     {
@@ -49,6 +50,7 @@ export default (props) => {
         <Wrapper padding="0 1rem">
           <Blog></Blog>
         </Wrapper>
+        <Certifications></Certifications>
         <VideoSection></VideoSection>
       </Youtube.Provider>
     </Layout>

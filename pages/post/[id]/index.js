@@ -16,17 +16,23 @@ export default (props) => {
   return (
     <Layout path="post">
       <Wrapper
-        maxWidth="800px"
+        maxWidth="1100px"
         width="100%"
         padding="12rem 1rem 5rem"
         margin="0 auto"
+        flex
+        xl_direction="column"
       >
-        <Title>{post.title}</Title>
-        <Wrapper className="post-content" margin="2rem 0 " width="100%">
-          {ReactHtmlParser(post.content)}
+        <Wrapper margin="0 4rem 0 0" xl_margin="0">
+          <Title>{post.title}</Title>
+          <Wrapper className="post-content" margin="2rem 0 " width="100%">
+            {ReactHtmlParser(post.content)}
+          </Wrapper>
         </Wrapper>
-        <Related>Related posts</Related>
-        <MiniPosts posts={props.posts.objects}></MiniPosts>
+        <Wrapper margin="1rem 0 0">
+          <Related>Related posts</Related>
+          <MiniPosts posts={props.posts.objects}></MiniPosts>
+        </Wrapper>
       </Wrapper>
     </Layout>
   );

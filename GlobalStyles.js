@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
 
     .post-content{
         & img{
-            width:90%!important;
+            width:100%!important;
             margin: 2rem 0;
         }
     }
