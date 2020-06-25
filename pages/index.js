@@ -1,5 +1,3 @@
-import { ContactForm } from "components/ContactForm";
-import { GlobalStyles } from "GlobalStyles";
 import Head from "next/head";
 import { Hero } from "components/Hero";
 import { Navbar } from "components/Navbar";
@@ -9,6 +7,7 @@ import { VideoSection } from "components/VideoSection";
 import { Youtube } from "components/Context";
 import { Layout } from "components/Layout";
 import { Wrapper } from "styles/Wrapper";
+import { ContactForm } from "components/ContactForm";
 import { Certifications } from "components/Certifications";
 export default (props) => {
   const data = [
@@ -38,8 +37,6 @@ export default (props) => {
             rel="stylesheet"
           />
         </Head>
-        <GlobalStyles></GlobalStyles>
-        <Navbar></Navbar>
         <Hero
           title="FIND THE BEST FRUITS
         IN THE MARKET"
@@ -50,14 +47,14 @@ export default (props) => {
         <Wrapper padding="0 1rem">
           <Blog></Blog>
         </Wrapper>
-        <Certifications></Certifications>
         <VideoSection></VideoSection>
+        <Certifications></Certifications>
       </Youtube.Provider>
     </Layout>
   );
 };
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const posts = await fetch(
     "https://api.cosmicjs.com/v1/766276a0-6f97-11e9-a240-33a121016213/objects?pretty=true&hide_metafields=true&type=posts&limit=3&props=slug,title,content,metadata,"
   );

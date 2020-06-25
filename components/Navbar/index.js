@@ -15,11 +15,13 @@ export const Navbar = ({ path }) => {
         justifyContent="space-between"
         alignItems="center"
       >
-        <Link href="/">
-          <a>
-            <img src="/images/logo.png" width="80px" alt="logo" />
-          </a>
-        </Link>
+        <Wrapper width="5rem">
+          <Link href="/">
+            <a>
+              <img src="/images/logo.png" width="100%" alt="logo" />
+            </a>
+          </Link>
+        </Wrapper>
         <div>
           <List>
             <li>

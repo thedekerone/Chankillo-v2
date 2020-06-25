@@ -45,6 +45,10 @@ export const Anchor = styled.a`
     color: #5e5e5e;
     margin: 0 0 0 1.8rem;
   }
+  @media (max-width: 400px) {
+    color: #5e5e5e;
+    margin: 0 0 0 1rem;
+  }
 `;
 
 export const NavbarContainer = styled(Wrapper)`
@@ -52,4 +56,5 @@ export const NavbarContainer = styled(Wrapper)`
   position: relative;
   max-width: 1700px;
   margin: 0 auto;
+  top: 0;
 `;

@@ -9,7 +9,7 @@ export const Hero = ({ title, message }) => {
       position="relative"
       background="#F9F9F9"
       padding="12rem 3rem 5rem"
-      xl_padding="14rem 2rem 6rem"
+      xl_padding="10rem 2rem 6rem"
     >
       <Partial></Partial>
       <Wrapper

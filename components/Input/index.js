@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Label, In, Wrap } from "./styles";
 
-export const Input = ({ type, name, placeholder }) => {
+export const Input = ({ type, name, placeholder, handlechange }) => {
   const [trigger, setTrigger] = useState(false);
   return (
     <Label>
@@ -13,6 +13,7 @@ export const Input = ({ type, name, placeholder }) => {
         height="2px"
       ></Wrap>
       <In
+        onChange={handlechange}
         type={type}
         onFocus={() => setTrigger(true)}
         onBlur={() => setTrigger(false)}

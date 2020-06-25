@@ -23,7 +23,7 @@ export default (props) => {
   );
 };
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const posts = await fetch(
     "https://api.cosmicjs.com/v1/766276a0-6f97-11e9-a240-33a121016213/objects?pretty=true&hide_metafields=true&type=posts&limit=20&props=slug,title,content,metadata"
   );

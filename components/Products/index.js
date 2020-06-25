@@ -13,23 +13,21 @@ export const Products = () => {
     >
       <Title>GET TO KNOW MOTE ABOUT OUR PRODUCTS</Title>
       <Product
-        title="MANGO KENT"
+        title="KENT MANGO"
         img="/images/mangoex.jpg"
-        description="Enjoy the delicious mango kent in it's best state, containing a lot of
-          good calories this delocious fruit is a great adition to your diet."
+        description="
+        Kent Mango is an excellent tasting fruit, very low in calories, very little fiber and the widest range of essential minerals and vitamins."
       ></Product>
       <Product
-        title="MANGO KEITT"
+        title="KEITT MANGO"
         img="/images/camp1.jpg"
-        description="Enjoy the delicious mango kent in it's best state, containing a lot of
-          good calories this delocious fruit is a great adition to your diet."
+        description="The Keitt mango has a small seed surrounded by very little fiber. It is consistent and firm meat with a fruity flavor, mildly acidic and aromatic."
         reverse
       ></Product>
       <Product
         title="HASS AVOCADO"
         img="/images/camp2.jpg"
-        description="Enjoy the delicious mango kent in it's best state, containing a lot of
-          good calories this delocious fruit is a great adition to your diet."
+        description="The Hass avocado is one of the most delicious varieties of avocado around, with a rich creamy flesh and superior taste."
       ></Product>
     </Wrapper>
   );
