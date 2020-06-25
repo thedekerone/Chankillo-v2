@@ -26,7 +26,7 @@ export const Navbar = ({ path }) => {
           <List>
             <li>
               <Link href="/">
-                <Anchor active={path != "post"}>HOME</Anchor>
+                <Anchor active={path == "home"}>HOME</Anchor>
               </Link>
             </li>
             <li>
@@ -36,7 +36,7 @@ export const Navbar = ({ path }) => {
             </li>
             <li>
               <Link href="#">
-                <Anchor>ABOUT</Anchor>
+                <Anchor active={path == "about"}>ABOUT</Anchor>
               </Link>
             </li>
           </List>

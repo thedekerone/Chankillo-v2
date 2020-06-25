@@ -29,7 +29,7 @@ export default (props) => {
     },
   ];
   return (
-    <Layout>
+    <Layout path="home">
       <Youtube.Provider value={{ videos: data, posts: props.posts.objects }}>
         <Head>
           <link
