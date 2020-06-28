@@ -6,6 +6,7 @@ export const Node = styled.div`
   border-radius: 100%;
   border: 1px solid #16ca76;
   position: relative;
+  cursor:pointer;
   display: flex;
   transition:.4s;
   justify-content: center;

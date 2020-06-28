@@ -36,7 +36,7 @@ export const Footer = () => {
           </div>
         </Wrapper>
         <Wrapper flex justifyContent="center" width="100%">
-          <img src="images/logo.png" alt="logo" width="100px" />
+          <img src="/images/logo.png" alt="logo" width="100px" />
         </Wrapper>
         <Wrapper flex justifyContent="center" width="100%">
           <Icon>

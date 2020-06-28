@@ -49,9 +49,19 @@ export const Text = styled.p`
   margin-bottom: 1rem;
 `;
 
+export const Anchor = styled.a`
+  margin-top: auto;
+  display: block;
+`;
+
 export const VideoButton = styled(Button)`
   position: relative;
   margin-top: auto;
+  transition: 0.2s;
+  overflow: hidden;
+  &:hover {
+    background: #109356;
+  }
   align-self: flex-start;
   & .sign {
     position: absolute;
@@ -62,10 +72,12 @@ export const VideoButton = styled(Button)`
     font-weight: 300;
     height: 100%;
     width: 3rem;
-    background: rgba(0, 0, 0, 0.16);
+    background: #109356;
     right: 0;
+    z-index: 2;
     bottom: 0;
   }
+
   @media (max-width: 900px) {
     align-self: auto;
     margin-top: 2rem;

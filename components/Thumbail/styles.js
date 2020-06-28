@@ -18,20 +18,22 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.a`
-  font-size: ${(props) => (props.mini ? "1rem" : "1.8rem")};
   font-weight: 600;
-  color: #3d3d3d;
   display: block;
   margin: 0.4rem 0 0.8rem;
-  &:hover {
-    color: #a3a3a3;
+
+  & h2 {
+    font-size: ${(props) => (props.mini ? "1rem" : "1.7rem")};
+  }
+
+  & h2:hover {
+    color: #1c885f;
   }
 `;
 
 export const Text = styled.p`
   font-size: 1rem;
   line-height: 2.25rem;
-  color: #858585;
 `;
 
 export const Cover = styled.div``;

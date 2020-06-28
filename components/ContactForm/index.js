@@ -56,12 +56,12 @@ export const ContactForm = ({ width }) => {
         width="100%"
         color="white"
         fontWeight="600"
-        bHover="#12A561"
-        bActive="#0E814B"
+        bHover="#14B86B"
+        bActive="#109356"
         border="0"
         size="1.20rem"
         onClick={() => handlePress()}
-        background="#109356"
+        background="#12A561"
         padding="1.5rem 2rem"
       >
         SUBMIT

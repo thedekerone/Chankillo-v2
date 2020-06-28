@@ -36,7 +36,7 @@ export default (props) => {
           title="FIND THE BEST FRUITS
         IN THE MARKET"
           message="In Chankillo Farmers we are proud of the quality we deliver in all
-        of our fruits, contact us to get a quote and learn more"
+        of our fruits. Contact us to get a quote and learn more"
         ></Hero>
         <Products></Products>
         <Wrapper padding="0 1rem">

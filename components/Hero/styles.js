@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const Title = styled.h2`
   font-size: 2.6rem;
   font-weight: 600;
-  color: #0a5c36;
   margin-bottom: 1.5rem;
 `;
 
 export const Text = styled.p`
-  color: #858585;
   line-height: 2rem;
   font-size: 1.125rem;
   display: block;
@@ -21,7 +19,7 @@ export const Text = styled.p`
 export const Partial = styled.div`
   position: absolute;
   clip-path: polygon(23% 0, 100% 0, 100% 100%, 0% 100%);
-  background: url("images/mango.png");
+  background: url("/images/mango.png");
   background-size: cover;
   background-position: center center;
   height: 100%;

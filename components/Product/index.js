@@ -35,19 +35,19 @@ export const Product = ({
         <ProductName>{title}</ProductName>
         <Description>{description}</Description>
         <Button
-          color="#14B86B"
+          color="#16CA76"
           width="20rem"
           lg_width="100%"
           padding="1rem "
-          bHover="#14B86B"
+          bHover="#16CA76"
           cHover="white"
-          bActive="#14B86B"
+          bActive="#109356"
           cActive="white"
-          border="1px solid #14B86B"
+          border="1px solid #16CA76"
           onClick={() => {
             router.push("/product/kent-mango");
           }}
-          background="white"
+          background="#FbFbFb"
           fontWeight="500"
         >
           LEARN MORE

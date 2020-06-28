@@ -7,7 +7,7 @@ import { Footer } from "../Footer";
 
 export const Layout = ({ children, path }) => {
   return (
-    <Wrapper minHeight="120vh" padding=" 0 0 8rem 0">
+    <Wrapper minHeight="120vh" padding=" 0 0 19rem 0">
       <Head>
         <title>Chankillo Farmers</title>
         <link

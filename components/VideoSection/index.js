@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Wrapper, Slider } from "styles/Wrapper";
 import { FaArrowRight } from "react-icons/fa";
-
+import Router from "next/router";
 import {
   Video,
   VideoWrapper,
@@ -11,6 +11,7 @@ import {
   VideoGrid,
   Thumb,
   PostTitle,
+  Anchor,
 } from "./styles";
 import { Youtube } from "components/Context";
 export const VideoSection = () => {
@@ -36,23 +37,24 @@ export const VideoSection = () => {
         <Wrapper height="100%" flex direction="column">
           <Title dark>{videos[0].title}</Title>
           <Text>{videos[0].description}</Text>
-
-          <VideoButton
-            border="0"
-            background="#14B86B"
-            padding=".8rem 7rem"
-            color="white"
-            fontWeight="bold"
-          >
-            <div className="sign">
-              <FaArrowRight />
-            </div>
-            WATCH RELATED
-          </VideoButton>
+          <Anchor href="https://www.youtube.com/channel/UCg0gsaTRZY8if77FlHoj8ag">
+            <VideoButton
+              border="0"
+              background="#14B86B"
+              padding=".8rem 7rem"
+              color="white"
+              fontWeight="bold"
+            >
+              <div className="sign">
+                <FaArrowRight />
+              </div>
+              VISIT CHANNEL
+            </VideoButton>
+          </Anchor>
         </Wrapper>
       </VideoWrapper>
 
-      <Wrapper margin="3.8rem 0 0 0">
+      {/* <Wrapper margin="3.8rem 0 0 0">
         <h3>FEATURED VIDEOS</h3>
 
         <Slider margin="2rem 0">
@@ -71,7 +73,7 @@ export const VideoSection = () => {
             <PostTitle>{videos[1].title}</PostTitle>
           </Wrapper>
         </Slider>
-      </Wrapper>
+      </Wrapper> */}
     </Wrapper>
   );
 };

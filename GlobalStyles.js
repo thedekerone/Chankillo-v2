@@ -11,6 +11,15 @@ export const GlobalStyles = createGlobalStyle`
         font-family: 'Montserrat', sans-serif;
         position:relative;
     }
+
+    h1,h2,h3,h4,h5,h6{
+        color: #292929;
+    }
+
+    p{
+        color: #525252;
+    }
+
     button{
         font-family: "Montserrat", sans-serif;
     }
