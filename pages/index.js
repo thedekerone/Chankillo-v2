@@ -28,15 +28,10 @@ export default (props) => {
         "https://i.ytimg.com/vi/8e1cZ7oqyXo/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCLAuJutKWvl6mfrix5Io6VKx_kfA",
     },
   ];
+
   return (
-    <Layout path="home">
-      <Youtube.Provider value={{ videos: data, posts: props.posts.objects }}>
-        <Head>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-          />
-        </Head>
+    <Youtube.Provider value={{ videos: data, posts: props.posts.objects }}>
+      <Layout path="home">
         <Hero
           title="FIND THE BEST FRUITS
         IN THE MARKET"
@@ -49,8 +44,8 @@ export default (props) => {
         </Wrapper>
         <VideoSection></VideoSection>
         <Certifications></Certifications>
-      </Youtube.Provider>
-    </Layout>
+      </Layout>
+    </Youtube.Provider>
   );
 };
 

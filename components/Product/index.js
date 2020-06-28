@@ -2,6 +2,7 @@ import React from "react";
 import { ProductName, Description, Img } from "./styles";
 import { Button } from "styles/Button";
 import { Wrapper } from "styles/Wrapper";
+import { useRouter } from "next/router";
 
 export const Product = ({
   title = "Mango",
@@ -9,6 +10,7 @@ export const Product = ({
   img = "/images/mangoex.jpg",
   reverse,
 }) => {
+  const router = useRouter();
   return (
     <Wrapper
       margin="4rem 0 8rem 0"
@@ -42,9 +44,11 @@ export const Product = ({
           bActive="#14B86B"
           cActive="white"
           border="1px solid #14B86B"
+          onClick={() => {
+            router.push("/product/kent-mango");
+          }}
           background="white"
           fontWeight="500"
-          disabled
         >
           LEARN MORE
         </Button>

@@ -21,3 +21,47 @@ export const fadeOut = keyframes`
     }
 
 `;
+
+export const appear = keyframes`
+from{
+    opacity:0.4
+}
+
+to{
+    opacity: 1;
+}
+
+`;
+export const disappear = keyframes`
+from{
+    opacity:1;
+}
+
+to{
+    opacity: 0;
+
+}
+
+`;
+export const up = keyframes`
+from{
+    top:80px
+}
+
+to{
+    top:0
+
+}
+
+`;
+export const down = keyframes`
+from{
+    top:0
+}
+
+to{
+    top:80px
+
+}
+
+`;

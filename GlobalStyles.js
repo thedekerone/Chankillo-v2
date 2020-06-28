@@ -7,8 +7,9 @@ export const GlobalStyles = createGlobalStyle`
         padding:0
     }
     body{
-        background: #FDFDFD;
+        background: #FbFbFb;
         font-family: 'Montserrat', sans-serif;
+        position:relative;
     }
     button{
         font-family: "Montserrat", sans-serif;

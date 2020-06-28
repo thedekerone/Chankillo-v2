@@ -7,6 +7,7 @@ export const Node = styled.div`
   border: 1px solid #16ca76;
   position: relative;
   display: flex;
+  transition:.4s;
   justify-content: center;
   background: ${(props) => (props.current ? "#16ca76" : "#fdfdfd")};
   &:after {
@@ -22,7 +23,7 @@ export const Node = styled.div`
 
 export const Line = styled.div`
   width: 100%;
-  height: 2px;
+  height: 1px;
   z-index: -1;
   position: absolute;
   background: #16ca76;

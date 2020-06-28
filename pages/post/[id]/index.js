@@ -7,6 +7,7 @@ import ReactHtmlParser from "react-html-parser";
 import { Wrapper } from "styles/Wrapper";
 import { Title, Related } from "styles/Post/styles";
 import { MiniPosts } from "components/MiniPosts";
+import Head from "next/head";
 
 export default (props) => {
   const router = useRouter();
@@ -15,6 +16,9 @@ export default (props) => {
   console.log(id);
   return (
     <Layout path="post">
+      <Head>
+        <title>{post.title} - Chankillo Farmers</title>
+      </Head>
       <Wrapper
         maxWidth="1100px"
         width="100%"
