@@ -24,7 +24,7 @@ export const fadeOut = keyframes`
 
 export const appear = keyframes`
 from{
-    opacity:0.4
+    opacity:0
 }
 
 to{

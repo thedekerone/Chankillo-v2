@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { Wrapper, Slider } from "styles/Wrapper";
+import { useNearScreen } from "utils/useNearScreen";
 import { FaArrowRight } from "react-icons/fa";
 import Router from "next/router";
 import {
@@ -14,14 +15,18 @@ import {
   Anchor,
 } from "./styles";
 import { Youtube } from "components/Context";
+import { AnimatedWrapper } from "../../styles/AnimatedWrapper";
 export const VideoSection = () => {
+  const [show, element] = useNearScreen();
   const { videos } = useContext(Youtube);
   console.log(videos);
   return (
-    <Wrapper
+    <AnimatedWrapper
       maxWidth="1200px"
       heigth="300px"
       margin="10rem auto 3rem"
+      show={show}
+      ref={element}
       width="100%"
       padding="1rem"
     >
@@ -74,6 +79,6 @@ export const VideoSection = () => {
           </Wrapper>
         </Slider>
       </Wrapper> */}
-    </Wrapper>
+    </AnimatedWrapper>
   );
 };

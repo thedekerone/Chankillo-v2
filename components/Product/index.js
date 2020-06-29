@@ -3,6 +3,8 @@ import { ProductName, Description, Img } from "./styles";
 import { Button } from "styles/Button";
 import { Wrapper } from "styles/Wrapper";
 import { useRouter } from "next/router";
+import { useNearScreen } from "utils/useNearScreen";
+import { AnimatedWrapper } from "../../styles/AnimatedWrapper";
 
 export const Product = ({
   title = "Mango",
@@ -10,9 +12,13 @@ export const Product = ({
   img = "/images/mangoex.jpg",
   reverse,
 }) => {
+  const [show, element] = useNearScreen();
+
   const router = useRouter();
   return (
-    <Wrapper
+    <AnimatedWrapper
+      ref={element}
+      show={show}
       margin="4rem 0 8rem 0"
       xl_margin="3rem 0 6rem 0"
       flex
@@ -53,6 +59,6 @@ export const Product = ({
           LEARN MORE
         </Button>
       </Wrapper>
-    </Wrapper>
+    </AnimatedWrapper>
   );
 };

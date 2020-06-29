@@ -22,7 +22,7 @@ export const Thumb = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: ${(props) => (props.dark ? "#474747" : "#109356")};
+  color: ${(props) => (props.dark ? null : "#109356")};
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 2.5rem;
@@ -44,7 +44,6 @@ export const VideoWrapper = styled(Wrapper)`
 `;
 
 export const Text = styled.p`
-  color: #8e8e8e;
   font-size: 1rem;
   margin-bottom: 1rem;
 `;
