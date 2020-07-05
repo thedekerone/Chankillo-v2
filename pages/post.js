@@ -14,7 +14,7 @@ export default (props) => {
         maxWidth="1200px"
         width="100%"
         margin="0 auto"
-        padding="12rem 0 0"
+        padding="12rem 1rem 0"
       >
         <Title>Posts</Title>
         <Posts posts={props.posts.objects}></Posts>

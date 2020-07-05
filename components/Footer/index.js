@@ -19,6 +19,7 @@ export const Footer = () => {
         padding="4rem 2rem"
         margin="0 auto"
         bottom="0"
+        lg_direction="column"
       >
         <Wrapper
           direction="column"
@@ -35,8 +36,13 @@ export const Footer = () => {
             <Anchor href="#">info@chankillofarmers.com</Anchor>
           </div>
         </Wrapper>
-        <Wrapper flex justifyContent="center" width="100%">
-          <img src="/images/logo.png" alt="logo" width="100px" />
+        <Wrapper flex justifyContent="center" width="100%" lg_margin="3rem 0">
+          <img
+            src={require("public/images/logo.png?webp")}
+            alt="logo"
+            height="100px"
+            width="100px"
+          />
         </Wrapper>
         <Wrapper flex justifyContent="center" width="100%">
           <Icon>

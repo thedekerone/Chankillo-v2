@@ -18,13 +18,25 @@ export const Certifications = () => {
         alignItems="center"
       >
         <AnimatedWrapper show={show} maxWidth="14rem" width="100%">
-          <img src="/images/ggap.png" alt="" width="100%" />
+          <img
+            src={require("public/images/ggap.png?webp")}
+            alt="Globalgap"
+            width="100%"
+          />
         </AnimatedWrapper>
         <AnimatedWrapper show={show} maxWidth="14rem" width="100%">
-          <img src="/images/grasp.png" width="100%" alt="" />
+          <img
+            src={require("public/images/grasp.png?webp")}
+            width="100%"
+            alt="Grasp"
+          />
         </AnimatedWrapper>
         <AnimatedWrapper show={show} maxWidth="14rem" width="100%">
-          <img src="/images/grasp.png" width="100%" alt="" />
+          <img
+            src={require("public/images/ggap.png?webp")}
+            width="100%"
+            alt="Globalgap"
+          />
         </AnimatedWrapper>
         {/* <div>
           <img src="/images/ggap.png" alt="" width="150px" />

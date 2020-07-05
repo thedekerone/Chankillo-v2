@@ -19,7 +19,6 @@ import { AnimatedWrapper } from "../../styles/AnimatedWrapper";
 export const VideoSection = () => {
   const [show, element] = useNearScreen();
   const { videos } = useContext(Youtube);
-  console.log(videos);
   return (
     <AnimatedWrapper
       maxWidth="1200px"

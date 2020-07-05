@@ -8,7 +8,12 @@ export default () => {
   const [time, setTime] = useState(1);
   return (
     <Layout>
-      <Wrapper padding="5rem 1rem">
+      <Wrapper
+        height="50rem"
+        lg_height="55rem"
+        width="100%"
+        padding="5rem 1.5rem"
+      >
         <TimeLine time={time} setTime={setTime}></TimeLine>
         <FruitState
           time={time}

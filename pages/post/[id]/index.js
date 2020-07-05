@@ -13,7 +13,6 @@ export default (props) => {
   const router = useRouter();
   const { id } = router.query;
   const post = props.posts.objects.find((post) => post.slug == id);
-  console.log(id);
   return (
     <Layout path="post">
       <Head>

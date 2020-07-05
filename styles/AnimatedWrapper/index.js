@@ -7,7 +7,7 @@ export const AnimatedWrapper = styled(Wrapper)`
   animation: ${(props) =>
     props.show &&
     css`
-      ${appear} 1s ease forwards;
+      ${appear} 0.4s ease forwards;
     `};
   ${(props) => props.delay && "animation-delay: " + props.delay + "s"};
 `;

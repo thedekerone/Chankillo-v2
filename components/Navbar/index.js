@@ -16,28 +16,30 @@ export const Navbar = ({ path }) => {
         alignItems="center"
       >
         <Wrapper width="5rem">
-          <Link href="/">
-            <a>
-              <img src="/images/logo.png" width="100%" alt="logo" />
-            </a>
-          </Link>
+          <a href="/">
+            <img
+              src={require("public/images/logo.png?webp")}
+              width="100%"
+              alt="logo"
+            />
+          </a>
         </Wrapper>
         <div>
           <List>
             <li>
-              <Link href="/">
+              <a href="/">
                 <Anchor active={path == "home"}>HOME</Anchor>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="/post">
+              <a href="/post">
                 <Anchor active={path == "post"}>POST</Anchor>
-              </Link>
+              </a>
             </li>
             <li>
-              <Link href="#">
+              <a href="#">
                 <Anchor active={path == "about"}>ABOUT</Anchor>
-              </Link>
+              </a>
             </li>
           </List>
         </div>

@@ -18,49 +18,49 @@ export const TimeLine = ({ setTime, time }) => {
           setTime(1);
         }}
         current={time == 1}
-        stage="farming"
+        stage=" "
       ></Node>
       <Node
         onClick={() => {
           setTime(2);
         }}
         current={time == 2}
-        stage="farming"
+        stage=" "
       ></Node>
       <Node
         onClick={() => {
           setTime(3);
         }}
         current={time == 3}
-        stage="farming"
+        stage=" "
       ></Node>
       <Node
         onClick={() => {
           setTime(4);
         }}
         current={time == 4}
-        stage="farming"
+        stage=" "
       ></Node>
       <Node
         onClick={() => {
           setTime(5);
         }}
         current={time == 5}
-        stage="farming"
+        stage=" "
       ></Node>
       <Node
         onClick={() => {
           setTime(6);
         }}
         current={time == 6}
-        stage="farming"
+        stage=" "
       ></Node>
       <Node
         onClick={() => {
           setTime(7);
         }}
         current={time == 7}
-        stage="farming"
+        stage=" "
       ></Node>
     </Wrapper>
   );

@@ -1,5 +1,7 @@
 import Head from "next/head";
+import { useEffect, useLayoutEffect } from "react";
 import { Hero } from "components/Hero";
+
 import { Navbar } from "components/Navbar";
 import { Products } from "components/Products";
 import { Blog } from "components/Blog";
@@ -9,13 +11,13 @@ import { Layout } from "components/Layout";
 import { Wrapper } from "styles/Wrapper";
 import { ContactForm } from "components/ContactForm";
 import { Certifications } from "components/Certifications";
-export default (props) => {
+function index(props) {
   const data = [
     {
       url: "https://www.youtube.com/embed/mghV1_tksUU",
-      title: "Conversando con el Ing. Efer Calle. Octubre 2019.",
+      title: "Talking with the Engineer Efer Calle. October 2019.",
       description:
-        "Conversamos con el Ing. Efer Calle , Gerente General de Agroinversiones Huarangal EIRL, empresa que forma parte de Chankillo Farmers.",
+        "We spoke with the Engineer Efer Calle, General Manager of Agroinversiones Huarangal EIRL, a company that is part of Chankillo Farmers.",
       imgPath:
         "https://i.ytimg.com/vi/mghV1_tksUU/hqdefault.jpg?sqp=-oaymwEZCPYBEIoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBRWRpbKUEQVbZn-uBvbn8kibvWpg",
     },
@@ -47,7 +49,7 @@ export default (props) => {
       </Layout>
     </Youtube.Provider>
   );
-};
+}
 
 export async function getServerSideProps(context) {
   const posts = await fetch(
@@ -61,3 +63,5 @@ export async function getServerSideProps(context) {
     }, // will be passed to the page component as props
   };
 }
+
+export default index;

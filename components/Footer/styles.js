@@ -18,4 +18,7 @@ export const Anchor = styled.a`
 
 export const Icon = styled.i`
   margin-right: 1.5rem;
+  @media (max-width: 900px) {
+    margin: 0 1.2rem;
+  }
 `;
