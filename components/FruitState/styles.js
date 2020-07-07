@@ -1,20 +1,21 @@
 import styled, { css } from "styled-components";
 import { Wrapper } from "styles/Wrapper";
 import { appear, disappear, up, down } from "animation";
-import { updateArrayTypeNode } from "typescript";
+import { slideIn, slideOut } from "../../animation";
 export const StateWrapper = styled(Wrapper)`
-  opacity: 0;
   padding: 2rem 2rem 4rem;
+  position: relative;
+  opacity: 0;
   -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
   animation: ${(props) =>
     props.show
       ? css`
-          ${appear} .5s ease-in forwards;
+          ${slideIn} .5s ease forwards;
         `
       : css`
-          ${disappear} 0s ease forwards;
+          ${slideOut} .5s ease forwards;
         `};
 `;
 
@@ -43,6 +44,9 @@ export const ImageContainer = styled.div`
 `;
 
 export const Container = styled(Wrapper)`
+  &>div {
+    overflow:hidden;
+  }
   /* animation: ${(props) =>
     props.show
       ? css`

@@ -27,19 +27,19 @@ export const Navbar = ({ path }) => {
         <div>
           <List>
             <li>
-              <a href="/">
-                <Anchor active={path == "home"}>HOME</Anchor>
-              </a>
+              <Anchor href="/" active={path == "home"}>
+                HOME
+              </Anchor>
             </li>
             <li>
-              <a href="/post">
-                <Anchor active={path == "post"}>POST</Anchor>
-              </a>
+              <Anchor href="/post" active={path == "post"}>
+                POST
+              </Anchor>
             </li>
             <li>
-              <a href="#">
-                <Anchor active={path == "about"}>ABOUT</Anchor>
-              </a>
+              <Anchor href="#" active={path == "about"}>
+                ABOUT
+              </Anchor>
             </li>
           </List>
         </div>

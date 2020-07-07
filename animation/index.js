@@ -42,7 +42,34 @@ to{
 
 }
 
+
 `;
+
+export const slideIn = keyframes`
+    from{
+        opacity:0;
+        left:100%;
+    }
+
+    to{
+        opacity: 1;
+        left:0
+    }
+
+`;
+export const slideOut = keyframes`
+    from{
+        opacity:1;
+        left:0;
+    }
+
+    to{
+        opacity:0;
+        left:-100%;
+    }
+
+`;
+
 export const up = keyframes`
 from{
     top:80px

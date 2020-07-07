@@ -4,6 +4,7 @@ import { appear } from "animation";
 
 export const AnimatedWrapper = styled(Wrapper)`
   opacity: 0;
+  position: relative;
   animation: ${(props) =>
     props.show &&
     css`

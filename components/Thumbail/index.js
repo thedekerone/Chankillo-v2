@@ -20,11 +20,9 @@ export const Thumbnail = ({
       <Article mini={mini}>
         <Thumb src={cover}></Thumb>
         <Content mini={mini}>
-          <a href={"/post/" + slug}>
-            <Title mini={mini}>
-              <h2>{title}</h2>
-            </Title>
-          </a>
+          <Title href={"/post/" + slug} mini={mini}>
+            <h2>{title}</h2>
+          </Title>
           {description ? <Text>{description.slice(0, 100) + "..."}</Text> : ""}
         </Content>
       </Article>

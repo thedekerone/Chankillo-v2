@@ -6,6 +6,7 @@ export const Form = styled.form`
   margin-left: 2rem;
   flex-direction: column;
   position: relative;
+  position: relative;
   z-index: 2;
 
   ${(props) => props.width && " width:" + props.width};
@@ -21,4 +22,12 @@ export const Form = styled.form`
     width: 100%;
     margin: 0;
   }
+`;
+
+export const Message = styled.h5`
+  position: absolute;
+  left: 0.5rem;
+  top: 0.5rem;
+  color: #14b86b;
+  font-weight: 500;
 `;

@@ -1,12 +1,12 @@
 import React, { useState, useLayoutEffect } from "react";
-import { Form } from "./styles";
+import { Form, Message } from "./styles";
 import { Button } from "styles/Button";
 import { Input } from "components/Input";
 
 export const ContactForm = ({ width }) => {
   const [focused, setFocused] = useState(false);
   const [state, setState] = useState({ name: "", email: "", phone: "" });
-
+  const [message, setMessage] = useState("");
   const handlechange = (event) => {
     const { name, value } = event.target;
 
@@ -27,12 +27,21 @@ export const ContactForm = ({ width }) => {
           phone: state.phone,
         }),
       });
+      console.log("EMAIL SENT!");
     } catch (error) {
       console.log(error);
     }
   };
   return (
-    <Form onSubmit={(e) => e.preventDefault()} width="32rem">
+    <Form
+      onSubmit={(e) => {
+        e.preventDefault();
+        message.length < 1 && handlePress();
+        setMessage("Email sent");
+      }}
+      width="32rem"
+    >
+      <Message>{message}</Message>
       <Input
         type="text"
         name="name"
@@ -60,7 +69,6 @@ export const ContactForm = ({ width }) => {
         bActive="#109356"
         border="0"
         size="1.20rem"
-        onClick={() => handlePress()}
         background="#12A561"
         padding="1.5rem 2rem"
       >
