@@ -19,6 +19,7 @@ export const Description = styled.p`
 export const Img = styled.img`
   width: 100%;
   height: 100%;
+  max-height: 17rem;
   object-fit: cover;
   @media (max-width: 700px) {
     margin-bottom: 1rem;

@@ -92,3 +92,22 @@ to{
 }
 
 `;
+
+export const spin = keyframes`
+    from{
+        transform:rotateZ(0)
+    }
+
+    to{
+        transform:rotateZ(360deg)
+    }
+`;
+
+export const showUp = keyframes`
+    from {
+        bottom:-3.5rem;
+    }
+    to{
+        bottom:0.5rem;
+    }
+`;
