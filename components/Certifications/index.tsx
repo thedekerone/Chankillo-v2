@@ -26,7 +26,7 @@ export const Certifications = () => {
         </AnimatedWrapper>
         <AnimatedWrapper show={show} maxWidth="14rem" width="100%">
           <img
-            src={require("public/images/grasp.png?webp")}
+            src={require("public/images/grasp2.png?webp")}
             width="100%"
             alt="Grasp"
           />
