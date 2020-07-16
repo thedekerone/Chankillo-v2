@@ -54,7 +54,6 @@ export const Product = ({
           onClick={() => {
             router.push("/product/kent-mango");
           }}
-          disabled
           background="#FbFbFb"
           fontWeight="500"
         >

@@ -6,7 +6,7 @@ export const StateWrapper = styled(Wrapper)`
   padding: 2rem 2rem 4rem;
   position: relative;
   opacity: 0;
-  -webkit-box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
   animation: ${(props) =>

@@ -46,7 +46,7 @@ export const FruitState:FC<FruitStateProps> = ({
           alignItems="center"
         >
           <Wrapper
-            onClick={() => (time > 1 ? setTime(time - 1) : setTime(7))}
+            onClick={() => (time > 1 ? setTime(time - 1) : setTime(5))}
             flex
             cursor="pointer"
             alignItems="center"
@@ -56,7 +56,7 @@ export const FruitState:FC<FruitStateProps> = ({
           </Wrapper>
           <Wrapper
             cursor="pointer"
-            onClick={() => (time < 7 ? setTime(time + 1) : setTime(1))}
+            onClick={() => (time < 5 ? setTime(time + 1) : setTime(1))}
             flex
             alignItems="center"
           >
