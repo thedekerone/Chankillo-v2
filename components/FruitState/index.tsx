@@ -4,7 +4,7 @@ import {
   Container,
   Title,
   Content,
-  ImageContainer,
+  Image,
 } from "./styles";
 import { FaLongArrowAltRight, FaLongArrowAltLeft } from "react-icons/fa";
 import { Wrapper } from "styles/Wrapper";
@@ -12,13 +12,10 @@ import { FruitStateProps } from "TS/interfaces";
 export const FruitState:FC<FruitStateProps> = ({
   show = false,
   children,
-  title,
-  content,
-  images = [],
   time,
+  image,
   setTime,
 }) => {
-  console.log(images);
   return (
     <Container
       maxWidth="1000px"
@@ -28,15 +25,8 @@ export const FruitState:FC<FruitStateProps> = ({
       show={show}
     >
       <Wrapper position="absolute" width="100%">
-        <StateWrapper background="white" show={show}>
-          <Title>{title}</Title>
-          <Content>{content}</Content>
-          <ImageContainer>
-            {images.map((el, index) => {
-              return <img src={el} key={index} alt="state image" />;
-            })}
-          </ImageContainer>
-          {children}
+        <StateWrapper show={show}>
+           {show && <Image height="100%" width="100%" src={image} alt="test"/>} 
         </StateWrapper>
         <Wrapper
           color="#14B86B"

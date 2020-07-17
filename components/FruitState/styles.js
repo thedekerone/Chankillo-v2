@@ -3,12 +3,12 @@ import { Wrapper } from "styles/Wrapper";
 import { appear, disappear, up, down } from "animation";
 import { slideIn, slideOut } from "../../animation";
 export const StateWrapper = styled(Wrapper)`
-  padding: 2rem 2rem 4rem;
   position: relative;
   opacity: 0;
-  -webkit-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
+  height:0;
+  width:100%;
+  
+  overflow:hidden;
   animation: ${(props) =>
     props.show
       ? css`
@@ -29,18 +29,10 @@ export const Content = styled.p`
   margin-bottom: 4rem;
 `;
 
-export const ImageContainer = styled.div`
-  display: grid;
-  grid-template-rows: 16rem;
-  gap: 2rem;
-  max-width: 900px;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-  & img {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-  }
+export const Image = styled.img`
+  width:100%;
+  height:100%;
+  object-fit:cover;
 `;
 
 export const Container = styled(Wrapper)`

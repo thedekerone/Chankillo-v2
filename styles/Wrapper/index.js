@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   ${(props) => props.maxWidth && "max-width:" + props.maxWidth};
   ${(props) => props.minHeight && "min-height:" + props.minHeight};
   ${(props) => props.border && "border:" + props.border};
+  ${(props) => props.overflow && "overflow:" + props.overflow};
   ${(props) => props.width && "width:" + props.width};
   ${(props) => props.height && "height:" + props.height};
   ${(props) => props.color && "color:" + props.color};

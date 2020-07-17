@@ -5,8 +5,12 @@ import { Layout } from "components/Layout";
 import {ProductInfo} from "components/ProductInfo"
 import { FruitState } from "components/FruitState";
 
+import oscar from "gallery_files/oscar.json"
+import cesar from "gallery_files/cesar.json"
+import {ImageDisplayer} from "components/ImageDisplayer"
 export default () => {
   const [time, setTime] = useState(1);
+  const images = [...cesar.files.slice(5,15).map(el=> cesar.base_url +  el.file_path) , ...oscar.files.slice(5,15).map(el=> oscar.base_url +  el.file_path)]
   return (
     <Layout>
         <ProductInfo content="
@@ -20,52 +24,12 @@ Due to its specific composition, mango is a special food for the skin: provitami
 In addition, vitamin A also helps retinal conditions since it is a structural element of the retina and its availability is enhanced with the presence of vitamins C and E."></ProductInfo>
 
       <Wrapper
-        height="40rem"
-        lg_height="55rem"
         width="100%"
+        maxWidth="1000px"
+        margin="0 auto"
         padding="1rem 1.5rem"
       >
-        {/* <TimeLine time={time} setTime={setTime}></TimeLine> */}
-        <FruitState
-          time={time}
-          setTime={setTime}
-          title="Fundo Oskar"
-          images={["/images/camp1.jpg", "/images/camp2.jpg"]}
-          content="Located on Yautan, Casma. It has the perfect weather for the growing of mangoes."
-          show={time == 1}
-        ></FruitState>
-        <FruitState
-          time={time}
-          setTime={setTime}
-          title="Fundo El Molinero"
-          images={["/images/camp1.jpg", "/images/camp2.jpg"]}
-          content="Lore ipsum ga ets luminous in tenebris lucet krappa 123"
-          show={time == 2}
-        ></FruitState>
-        <FruitState
-          time={time}
-          setTime={setTime}
-          title="Fundo Dago"
-          images={["/images/camp1.jpg", "/images/camp2.jpg"]}
-          content="Lore ipsum ga ets luminous in tenebris lucet krappa 123"
-          show={time == 3}
-        ></FruitState>
-        <FruitState
-          time={time}
-          setTime={setTime}
-          title="Fundo Efer"
-          images={["/images/camp1.jpg", "/images/camp2.jpg"]}
-          content="Lore ipsum ga ets luminous in tenebris lucet krappa 123"
-          show={time == 4}
-        ></FruitState>
-        <FruitState
-          time={time}
-          setTime={setTime}
-          title="Fundo William"
-          images={["/images/camp1.jpg", "/images/camp2.jpg"]}
-          content="Lore ipsum ga ets luminous in tenebris lucet krappa 123"
-          show={time == 5}
-        ></FruitState>
+        <ImageDisplayer imgSrc={images}></ImageDisplayer>
       </Wrapper>
     </Layout>
   );

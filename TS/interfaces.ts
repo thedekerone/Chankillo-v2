@@ -23,10 +23,8 @@ export interface ProductProps {
 }
 
 export interface FruitStateProps extends TimerHook {
-    title: string;
     show:boolean;
-    content:string;
-    images:string[];
+    image:string;
     
 }
 

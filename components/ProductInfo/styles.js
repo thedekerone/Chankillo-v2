@@ -8,4 +8,5 @@ export const Title = styled.h1`
 export const Info = styled.p`
     font-size:1rem;
     line-height:1.5em;
+    letter-spacing:.05em;
 `

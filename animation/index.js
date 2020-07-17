@@ -70,6 +70,31 @@ export const slideOut = keyframes`
 
 `;
 
+export const slideInReverse = keyframes`
+    from{
+        opacity:0;
+        left:-100%;
+    }
+
+    to{
+        opacity:1;
+        left:0;
+    }
+`
+
+export const slideOutReverse = keyframes`
+    from {
+        opacity:1;
+        left:0;
+    }
+    to{
+        opacity:0;
+        left:100%
+    }
+`
+
+
+
 export const up = keyframes`
 from{
     top:80px
