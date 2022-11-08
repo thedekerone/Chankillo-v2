@@ -14,7 +14,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.2.1",
     "fs": "^0.0.1-security",
-    "next": "9.4.4",
+    "next": "13.0.2",
     "next-compose-plugins": "^2.2.0",
     "next-ga": "^2.3.4",
     "next-nprogress": "^1.4.0",
